@@ -11,6 +11,10 @@
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-compass": "^1.1.1",
+<<<<<<< HEAD
+=======
+    "grunt-contrib-cssmin": "^2.2.1",
+>>>>>>> a96e8ae1daf4365ab343e4a8834c360675a93b23
     "grunt-contrib-jade": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
   }
