@@ -1,5 +1,5 @@
 *.html
 *.css
 */build
-*node_modules/
-*stylesheets/
+/node_modules/
+/stylesheets/
