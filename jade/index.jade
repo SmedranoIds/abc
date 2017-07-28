@@ -52,39 +52,38 @@ html
 											strong  30%
 
 						#profile.tab-pane(role='tabpanel')
-							h1 Agregar una Campaña
-							//- pantalla agregar nuevo
-							.col-md-offset-1.col-md-10.text-center
-								form#nuevacampana
-									.col-xs-12
-										label 
-											span.text-left Codigo
-										input.form-control.codigo
-									.col-xs-12
-										label Descripción
-										input.form-control.descripcion
-									.col-xs-6
-										label Fecha de inicio
-										input.form-control.fechainicio
-									.col-xs-6
-										label Fecha de inicio
-										input.form-control.fechafin
-									.col-xs-12.form-group
-										label Descuento
-										.input-group
-											input.form-control.descuento(type='text', placeholder='Descuento')
-											.input-group-addon %
-									.col-xs-12
-										label Estatus
-										select.form-control
-											option Selecciona una
-											option Activa
-											option Desactivada
-											option En pausa
-									.col-xs-12
-										.space
-										button.btn.btn-primary Guardar
-										.space
+						
+								.col-xs-offset-1.col-xs-10
+									h1 Agregar una Campaña
+									form#nuevacampana
+										.col-xs-12
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo") 
+												span.text-left Codigo
+											input.form-control.codigo(placeholder="Introduce el codigo de la campaña")
+										.col-xs-12
+											label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Descripción
+											input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
+										.col-xs-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de inicio
+											input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
+										.col-xs-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
+											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+										.col-xs-12.form-group
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
+											.input-group
+												input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
+												.input-group-addon %
+										.col-xs-12
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
+											select.form-control
+												option Selecciona una
+												option Activa
+												option Desactivada
+												option En pausa
+											.space
+											button.btn.btn-primary Guardar
+											.space
 
 
 
