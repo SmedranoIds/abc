@@ -8,6 +8,7 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
 		link(rel='stylesheet', href='../css/custom.css')
+		link(rel="stylesheet", href="../font-awesome/css/font-awesome.min.css")
 
 	body
 		br
@@ -22,13 +23,54 @@ html
 							a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Nuevo
 					// Tab panes
 					.tab-content
-						#home.tab-pane.active(role='tabpanel') 
+						#home.tab-pane.active.listado(role='tabpanel') 
+							.space
 							.col-md-offset-1.col-md-10.text-center
 								h1 Listado de Promociones
-						#profile.tab-pane(role='tabpanel') ...
+								br
+							.col-md-offset-1.col-md-10
+								.panel.panel-default
+									.panel-heading
+										.row
+											.col-md-6.col-xs-12.text-center
+												h3.panel-title Titulo Campaña
+											.col-md-4.col-xs-12.text-center
+												h3.panel-title Estatus:  
+													strong  Activo
+											.col-md-1.col-xs-6.text-center
+												i.fa.fa-pencil-square-o.ev.editar
+											.col-md-1.col-xs-6.text-center
+												i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
+									.panel-body
+										.col-md-6.col-xs-12.text-center
+											| Descripción
+										.col-md-4.col-xs-12.text-center
+											| Fecha termino: 
+											strong  12/12/2017
+										.col-md-2.col-xs-12.text-center
+											| Descuento: 
+											strong  30%
+
+						#profile.tab-pane(role='tabpanel')
 							//- pantalla agregar nuevo
 							.col-md-offset-1.col-md-10.text-center
 								h1 listo
+
+		// Modal
+		#myModalEliminar.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+						h4.modal-title Eliminar
+					.modal-body
+						.col-md-offset-1.col-md-10
+							h4 ¿Estas seguro de eliminar la campaña?
+							br
+						.text-center
+							button.btn-solid.text-center(type='button', data-dismiss='modal') Cancelar
+							button.btn-solid.text-center(type='button', data-dismiss='modal') Aceptar
 
 		
 	script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
