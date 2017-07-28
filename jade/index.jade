@@ -10,34 +10,55 @@ html
 		link(rel='stylesheet', href='../css/custom.css')
 
 	body
-	.container
-		.row
-			div
-				// Nav tabs
-				ul.nav.nav-tabs(role='tablist')
-					li.active(role='presentation')
-						a(href='#campana', aria-controls='campana', role='tab', data-toggle='tab') Campañas
-					li(role='presentation')
-						a(href='#nueva', aria-controls='nueva', role='tab', data-toggle='tab') Nuevo
-				// Tab panes
-				.tab-content
-					#campana.tab-pane.active(role='tabpanel') Campana
-					#nueva.tab-pane(role='tabpanel') Nueva campaña
-
-
-		
-		//- pantalla listado
+		br
 		.container.listado
 			.row
-				.col-md-offset-1.col-md-10.text-center
-					h1 Listado de Promociones
-					
-		.container
-			.row
-				//- pantalla agregar nuevo
-				h1 listo
-
-
+				div
+					// Nav tabs
+					ul.nav.nav-tabs(role='tablist')
+						li.active(role='presentation')
+							a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Campañas existentes
+						li(role='presentation')
+							a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Nuevo
+					// Tab panes
+					.tab-content
+						#home.tab-pane.active(role='tabpanel') 
+							.col-md-offset-1.col-md-10.text-center
+								h1 Listado de Promociones
+						#profile.tab-pane(role='tabpanel')
+							h1 Agregar una Campaña
+							//- pantalla agregar nuevo
+							.col-md-offset-1.col-md-10.text-center
+								form#nuevacampana
+									.col-xs-12
+										label 
+											span.text-left Codigo
+										input.form-control.codigo
+									.col-xs-12
+										label Descripción
+										input.form-control.descripcion
+									.col-xs-6
+										label Fecha de inicio
+										input.form-control.fechainicio
+									.col-xs-6
+										label Fecha de inicio
+										input.form-control.fechafin
+									.col-xs-12.form-group
+										label Descuento
+										.input-group
+											input.form-control.descuento(type='text', placeholder='Descuento')
+											.input-group-addon %
+									.col-xs-12
+										label Estatus
+										select.form-control
+											option Selecciona una
+											option Activa
+											option Desactivada
+											option En pausa
+									.col-xs-12
+										.space
+										button.btn.btn-primary Guardar
+										.space
 
 
 
