@@ -10,6 +10,21 @@ html
 		link(rel='stylesheet', href='../css/custom.css')
 
 	body
+	.container
+		.row
+			div
+				// Nav tabs
+				ul.nav.nav-tabs(role='tablist')
+					li.active(role='presentation')
+						a(href='#campana', aria-controls='campana', role='tab', data-toggle='tab') Campañas
+					li(role='presentation')
+						a(href='#nueva', aria-controls='nueva', role='tab', data-toggle='tab') Nuevo
+				// Tab panes
+				.tab-content
+					#campana.tab-pane.active(role='tabpanel') Campana
+					#nueva.tab-pane(role='tabpanel') Nueva campaña
+
+
 		
 		//- pantalla listado
 		.container.listado
