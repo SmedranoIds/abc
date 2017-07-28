@@ -52,9 +52,42 @@ html
 											strong  30%
 
 						#profile.tab-pane(role='tabpanel')
+							h1 Agregar una Campaña
 							//- pantalla agregar nuevo
 							.col-md-offset-1.col-md-10.text-center
-								h1 listo
+								form#nuevacampana
+									.col-xs-12
+										label 
+											span.text-left Codigo
+										input.form-control.codigo
+									.col-xs-12
+										label Descripción
+										input.form-control.descripcion
+									.col-xs-6
+										label Fecha de inicio
+										input.form-control.fechainicio
+									.col-xs-6
+										label Fecha de inicio
+										input.form-control.fechafin
+									.col-xs-12.form-group
+										label Descuento
+										.input-group
+											input.form-control.descuento(type='text', placeholder='Descuento')
+											.input-group-addon %
+									.col-xs-12
+										label Estatus
+										select.form-control
+											option Selecciona una
+											option Activa
+											option Desactivada
+											option En pausa
+									.col-xs-12
+										.space
+										button.btn.btn-primary Guardar
+										.space
+
+
+
 
 		// Modal
 		#myModalEliminar.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
