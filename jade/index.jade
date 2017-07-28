@@ -3,7 +3,7 @@ html
 	head
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		title
+		title abc
 		meta(name='description', content='')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
@@ -12,7 +12,7 @@ html
 
 	body
 		br
-		.container.listado
+		.container
 			.row
 				div
 					// Nav tabs
@@ -23,164 +23,168 @@ html
 							a(href='#nuevacampana', aria-controls='nuevacampana', role='tab', data-toggle='tab') Nuevo
 					// Tab panes
 					.tab-content
-						#lista.tab-pane.active.listado(role='tabpanel') 
-							.space
-							.col-md-offset-1.col-md-10.text-center
-								h1 Listado de Promociones
-								br
-							.col-md-offset-1.col-md-10.campania
-								.panel.panel-default
-									.panel-heading
-										.row
+						#lista.tab-pane.active.listado(role='tabpanel')
+							.row
+								.space
+								.col-md-offset-1.col-md-10.text-center
+									h1 Listado de Promociones
+									br
+								.col-md-offset-1.col-md-10.campania
+									.panel.panel-default
+										.panel-heading
+											.row
+												.col-md-6.col-xs-12.text-center
+													h3.panel-title Titulo Campaña
+												.col-md-4.col-xs-12.text-center
+													h3.panel-title Estatus:  
+														strong  Activo
+												.col-md-1.col-xs-6.text-center
+													i.fa.fa-pencil-square-o.ev.editar(data-toggle="tooltip" data-placement="top" title="Editar")
+												.col-md-1.col-xs-6.text-center
+													i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
+														span(data-toggle="tooltip" data-placement="top" title="Eliminar")
+										.panel-body
 											.col-md-6.col-xs-12.text-center
-												h3.panel-title Titulo Campaña
+												| Descripción
 											.col-md-4.col-xs-12.text-center
-												h3.panel-title Estatus:  
-													strong  Activo
-											.col-md-1.col-xs-6.text-center
-												i.fa.fa-pencil-square-o.ev.editar
-											.col-md-1.col-xs-6.text-center
-												i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
-									.panel-body
-										.col-md-6.col-xs-12.text-center
-											| Descripción
-										.col-md-4.col-xs-12.text-center
-											| Fecha termino: 
-											strong  12/12/2017
-										.col-md-2.col-xs-12.text-center
-											| Descuento: 
-											strong  30%
+												| Fecha termino: 
+												strong  12/12/2017
+											.col-md-2.col-xs-12.text-center
+												| Descuento: 
+												strong  30%
 
-							.col-md-offset-1.col-md-10.campania
-								.panel.panel-default
-									.panel-heading
-										.row
+								.col-md-offset-1.col-md-10.campania
+									.panel.panel-default
+										.panel-heading
+											.row
+												.col-md-6.col-xs-12.text-center
+													h3.panel-title Titulo Campaña
+												.col-md-4.col-xs-12.text-center
+													h3.panel-title Estatus:  
+														strong  Activo
+												.col-md-1.col-xs-6.text-center
+													i.fa.fa-pencil-square-o.ev.editar(data-toggle="tooltip" data-placement="top" title="Editar")
+												.col-md-1.col-xs-6.text-center
+													i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
+										.panel-body
 											.col-md-6.col-xs-12.text-center
-												h3.panel-title Titulo Campaña
+												| Descripción
 											.col-md-4.col-xs-12.text-center
-												h3.panel-title Estatus:  
-													strong  Activo
-											.col-md-1.col-xs-6.text-center
-												i.fa.fa-pencil-square-o.ev.editar
-											.col-md-1.col-xs-6.text-center
-												i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
-									.panel-body
-										.col-md-6.col-xs-12.text-center
-											| Descripción
-										.col-md-4.col-xs-12.text-center
-											| Fecha termino: 
-											strong  12/12/2017
-										.col-md-2.col-xs-12.text-center
-											| Descuento: 
-											strong  30%
+												| Fecha termino: 
+												strong  12/12/2017
+											.col-md-2.col-xs-12.text-center
+												| Descuento: 
+												strong  30%
 
-							.col-md-offset-1.col-md-10.campania
-								.panel.panel-default
-									.panel-heading
-										.row
+								.col-md-offset-1.col-md-10.campania
+									.panel.panel-default
+										.panel-heading
+											.row
+												.col-md-6.col-xs-12.text-center
+													h3.panel-title Titulo Campaña
+												.col-md-4.col-xs-12.text-center
+													h3.panel-title Estatus:  
+														strong  Activo
+												.col-md-1.col-xs-6.text-center
+													i.fa.fa-pencil-square-o.ev.editar(data-toggle="tooltip" data-placement="top" title="Editar")
+												.col-md-1.col-xs-6.text-center
+													i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
+										.panel-body
 											.col-md-6.col-xs-12.text-center
-												h3.panel-title Titulo Campaña
+												| Descripción
 											.col-md-4.col-xs-12.text-center
-												h3.panel-title Estatus:  
-													strong  Activo
-											.col-md-1.col-xs-6.text-center
-												i.fa.fa-pencil-square-o.ev.editar
-											.col-md-1.col-xs-6.text-center
-												i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
-									.panel-body
-										.col-md-6.col-xs-12.text-center
-											| Descripción
-										.col-md-4.col-xs-12.text-center
-											| Fecha termino: 
-											strong  12/12/2017
-										.col-md-2.col-xs-12.text-center
-											| Descuento: 
-											strong  30%
-							.col-md-offset-1.col-md-10.campania
-								.panel.panel-default
-									.panel-heading
-										.row
+												| Fecha termino: 
+												strong  12/12/2017
+											.col-md-2.col-xs-12.text-center
+												| Descuento: 
+												strong  30%
+								.col-md-offset-1.col-md-10.campania
+									.panel.panel-default
+										.panel-heading
+											.row
+												.col-md-6.col-xs-12.text-center
+													h3.panel-title Titulo Campaña
+												.col-md-4.col-xs-12.text-center
+													h3.panel-title Estatus:  
+														strong  Activo
+												.col-md-1.col-xs-6.text-center
+													i.fa.fa-pencil-square-o.ev.editar(data-toggle="tooltip" data-placement="top" title="Editar")
+												.col-md-1.col-xs-6.text-center
+													i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
+										.panel-body
 											.col-md-6.col-xs-12.text-center
-												h3.panel-title Titulo Campaña
+												| Descripción
 											.col-md-4.col-xs-12.text-center
-												h3.panel-title Estatus:  
-													strong  Activo
-											.col-md-1.col-xs-6.text-center
-												i.fa.fa-pencil-square-o.ev.editar
-											.col-md-1.col-xs-6.text-center
-												i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
-									.panel-body
-										.col-md-6.col-xs-12.text-center
-											| Descripción
-										.col-md-4.col-xs-12.text-center
-											| Fecha termino: 
-											strong  12/12/2017
-										.col-md-2.col-xs-12.text-center
-											| Descuento: 
-											strong  30%
+												| Fecha termino: 
+												strong  12/12/2017
+											.col-md-2.col-xs-12.text-center
+												| Descuento: 
+												strong  30%
 
-							.col-md-offset-1.col-md-10.campania
-								.panel.panel-default
-									.panel-heading
-										.row
+								.col-md-offset-1.col-md-10.campania
+									.panel.panel-default
+										.panel-heading
+											.row
+												.col-md-6.col-xs-12.text-center
+													h3.panel-title Titulo Campaña
+												.col-md-4.col-xs-12.text-center
+													h3.panel-title Estatus:  
+														strong  Activo
+												.col-md-1.col-xs-6.text-center
+													i.fa.fa-pencil-square-o.ev.editar(data-toggle="tooltip" data-placement="top" title="Editar")
+												.col-md-1.col-xs-6.text-center
+													i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
+										.panel-body
 											.col-md-6.col-xs-12.text-center
-												h3.panel-title Titulo Campaña
+												| Descripción
 											.col-md-4.col-xs-12.text-center
-												h3.panel-title Estatus:  
-													strong  Activo
-											.col-md-1.col-xs-6.text-center
-												i.fa.fa-pencil-square-o.ev.editar
-											.col-md-1.col-xs-6.text-center
-												i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.ev.delete
-									.panel-body
-										.col-md-6.col-xs-12.text-center
-											| Descripción
-										.col-md-4.col-xs-12.text-center
-											| Fecha termino: 
-											strong  12/12/2017
-										.col-md-2.col-xs-12.text-center
-											| Descuento: 
-											strong  30%
-							.col-md-offset-1.col-md-10
-								nav(aria-label='...')
-									ul.pager
-										li
-											a(href='#') Previous
-										li
-											a(href='#') Next
+												| Fecha termino: 
+												strong  12/12/2017
+											.col-md-2.col-xs-12.text-center
+												| Descuento: 
+												strong  30%
+								.col-md-offset-1.col-md-10
+									nav(aria-label='...')
+										ul.pager
+											li
+												a(href='#') Previous
+											li
+												a(href='#') Next
 
-						#nuevacampana.tab-pane(role='tabpanel')
-							.col-xs-offset-1.col-xs-10
-								h1 Agregar una Campaña
-								form#nuevacampana
-									.col-xs-12
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo") 
-											span.text-left Codigo
-										input.form-control.codigo(placeholder="Introduce el codigo de la campaña")
-									.col-xs-12
-										label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Descripción
-										input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
-									.col-xs-6
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de inicio
-										input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
-									.col-xs-6
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
-										input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
-									.col-xs-12.form-group
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
-										.input-group
-											input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
-											.input-group-addon %
-									.col-xs-12
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
-										select.form-control
-											option Selecciona una
-											option Activa
-											option Desactivada
-											option En pausa
-										.space
-										button.btn.btn-primary Guardar
-										.space
+						#nuevacampana.tab-pane.listado(role='tabpanel')
+							.row
+								.space
+								.col-xs-offset-1.col-xs-10
+									h1 Agregar una Campaña
+									form#nuevacampana
+										.col-xs-12
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo") 
+												span.text-left Codigo
+											input.form-control.codigo(placeholder="Introduce el codigo de la campaña")
+										.col-xs-12
+											label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Descripción
+											input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
+										.col-xs-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de inicio
+											input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
+										.col-xs-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
+											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+										.col-xs-12.form-group
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
+											.input-group
+												input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
+												.input-group-addon %
+										.col-xs-12
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
+											select.form-control
+												option Selecciona una
+												option Activa
+												option Desactivada
+												option En pausa
+											.space
+											button.btn.btn-primary Guardar
+											.space
 
 
 		// Modal

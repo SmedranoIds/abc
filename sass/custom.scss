@@ -1,5 +1,5 @@
 body{
-	background: #ddd;
+	background: #f2f2f2;
 	.listado{
 	background: #FFF;
 	h1 {
@@ -22,20 +22,13 @@ body{
 		font-size: 18px;
 		color: #094FA4;
     }
-    .btn-solid{
-	width: 170px;
-	border: 2px solid #337ab7;
-	background: #337ab7;
-	background-color: #337ab7;
-	outline: none;
-	color:#fff;
-	font-size: 16px;
-	letter-spacing: 0;
-	}
 }
 .tab-pane{
 	padding-bottom: 30px;
 }
 h1{
 	color:#000;
+}
+.nav-tabs>li>a {
+    border: 1px solid #ddd;
 }
