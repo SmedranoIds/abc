@@ -1,14 +1,37 @@
 body{
 	background: #ddd;
 	.listado{
-	background: #fff;
+	background: #FFF;
 	h1 {
-		
+		color:#000;
 	}
 	}
 }
 .space{
-	height: 20px;
+	width: 100%;
+    height: 20px;
+}
+.ev{
+	cursor: pointer;
+}
+#myModalEliminar {
+    border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+    h4{
+		font-size: 18px;
+		color: #094FA4;
+    }
+    .btn-solid{
+	width: 170px;
+	border: 2px solid #337ab7;
+	background: #337ab7;
+	background-color: #337ab7;
+	outline: none;
+	color:#fff;
+	font-size: 16px;
+	letter-spacing: 0;
+	}
 }
 .tab-pane{
 	padding-bottom: 30px;
