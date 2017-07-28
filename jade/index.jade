@@ -11,19 +11,15 @@ html
 
 	body
 		br
-		.container
+		.container.listado
 			.row
 				div
 					// Nav tabs
 					ul.nav.nav-tabs(role='tablist')
 						li.active(role='presentation')
-							a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Home
+							a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Campañas existentes
 						li(role='presentation')
-							a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
-						li(role='presentation')
-							a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Messages
-						li(role='presentation')
-							a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') Settings
+							a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Nuevo
 					// Tab panes
 					.tab-content
 						#home.tab-pane.active(role='tabpanel') 
@@ -33,8 +29,6 @@ html
 							//- pantalla agregar nuevo
 							.col-md-offset-1.col-md-10.text-center
 								h1 listo
-						#messages.tab-pane(role='tabpanel') ...
-						#settings.tab-pane(role='tabpanel') ...
 
 		
 	script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
