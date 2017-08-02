@@ -157,23 +157,55 @@ html
 									h1 Agregar una Campaña
 									form#nuevacampana
 										.col-xs-12
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo") 
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo")
 												span.text-left Codigo
-											input.form-control.codigo(placeholder="Introduce el codigo de la campaña")
+											.input-group
+												.input-group-addon
+													i.fa.fa-certificate(aria-hidden="true")
+												input.form-control.codigo(placeholder="Introduce el codigo de la campaña")
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo")
+												span.text-left Sucursal
+											.input-group
+												.input-group-addon
+													i.fa.fa-building(aria-hidden="true")
+												input.form-control.codigo(placeholder="Introdusca susucursal")
 										.col-xs-12
 											label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Descripción
-											input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
+											.input-group
+												.input-group-addon
+													i.fa.fa-commenting-o(aria-hidden="true")
+												input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
 										.col-xs-6
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de inicio
-											input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
+											.input-group
+												.input-group-addon
+													i.fa.fa-calendar(aria-hidden="true")
+												input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
 										.col-xs-6
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
-											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+											.input-group
+												.input-group-addon
+													i.fa.fa-calendar(aria-hidden="true")
+												input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
 										.col-xs-12.form-group
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
 											.input-group
+												.input-group-addon
+													i.fa.fa-tag
 												input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
 												.input-group-addon %
+										.col-xs-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Importe maximo
+											.input-group
+												.input-group-addon
+													i.fa.fa-credit-card(aria-hidden="true")
+												input.form-control.fechainicio(placeholder="Introduce el importe maximo")
+										.col-xs-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Importe minimo
+											.input-group
+												.input-group-addon
+													i.fa.fa-credit-card(aria-hidden="true")
+												input.form-control.fechafin(placeholder="Introduce el importe minimo")
 										.col-xs-12
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
 											select.form-control
