@@ -208,11 +208,14 @@ html
 												input.form-control.fechafin(placeholder="Introduce el importe minimo")
 										.col-xs-12
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
-											select.form-control
-												option Selecciona una
-												option Activa
-												option Desactivada
-												option En pausa
+											.input-group
+												.input-group-addon
+													i.fa.fa-gears(aria-hidden="true")
+												select.form-control
+													option Selecciona una
+													option Activa
+													option Desactivada
+													option En pausa
 											.space
 											button.btn.btn-primary 
 												i.fa.fa-trash-o.ev.fa-floppy-o  
