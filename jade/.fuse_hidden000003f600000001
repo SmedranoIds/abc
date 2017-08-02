@@ -12,35 +12,22 @@ html
 
 	body
 		br
-		.space
 		.container
-			.usuario
-				.row
+			.space
+			.row
+				.nuevo.listado
 					.col-xs-offset-1.col-xs-10
 						h1 Inicia sesión en abc
-						br
 						form#Usuario
-							.col-md-offset-3.col-md-6.col-xs-12
-								label(data-toggle="tooltip" data-placement="top" title="Ingresa tu usuario") Usuario
-								.input-group
-									.input-group-addon
-										i.fa.fa-user-o(aria-hidden="true")
-									input.form-control.codigo(placeholder="Introduce tu Usuario")
-							.col-md-offset-3.col-md-6.col-xs-12
+							.col-xs-12
+								label(data-toggle="tooltip" data-placement="top" title="Ingresa tu usuario") 
+									span.text-left Usuario
+								input.form-control.codigo(placeholder="Introduce tu Usuario")
+							.col-xs-12
 								label(data-toggle="tooltip" data-placement="top" title="Contraseña") Contraseña
-								.input-group
-									.input-group-addon
-										i.fa.fa-key(aria-hidden="true")
-									input.form-control.codigo(placeholder="Introduce tu contraseña", type="password")
-								br
-					.col-xs-offset-1.col-xs-10.text-center
-						br
-						button.btn.btn-primary 
-							i.fa.fa-sign-in  
-							|  Entrar
-						.space
+								input.form-control.descripcion(placeholder="Introduce tu contraseña")
 
-		.space
+
 		br
 		.container
 			.row
@@ -187,65 +174,30 @@ html
 									h1 Agregar una Campaña
 									form#nuevacampana
 										.col-xs-12
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo")
-												span.text-left Codigo
-											.input-group
-												.input-group-addon
-													i.fa.fa-certificate(aria-hidden="true")
-												input.form-control.codigo(placeholder="Introduce el codigo de la campaña")
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese un codigo")
-												span.text-left Sucursal
-											.input-group
-												.input-group-addon
-													i.fa.fa-building(aria-hidden="true")
-												input.form-control.codigo(placeholder="Introdusca susucursal")
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese un código") 
+												span.text-left Código
+											input.form-control.codigo(placeholder="Introduce el código de la campaña")
 										.col-xs-12
 											label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Descripción
-											.input-group
-												.input-group-addon
-													i.fa.fa-commenting-o(aria-hidden="true")
-												input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
+											input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
 										.col-xs-6
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de inicio
-											.input-group
-												.input-group-addon
-													i.fa.fa-calendar(aria-hidden="true")
-												input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
+											input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
 										.col-xs-6
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
-											.input-group
-												.input-group-addon
-													i.fa.fa-calendar(aria-hidden="true")
-												input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
 										.col-xs-12.form-group
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
 											.input-group
-												.input-group-addon
-													i.fa.fa-tag
 												input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
 												.input-group-addon %
-										.col-xs-6
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Importe maximo
-											.input-group
-												.input-group-addon
-													i.fa.fa-credit-card(aria-hidden="true")
-												input.form-control.fechainicio(placeholder="Introduce el importe maximo")
-										.col-xs-6
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Importe minimo
-											.input-group
-												.input-group-addon
-													i.fa.fa-credit-card(aria-hidden="true")
-												input.form-control.fechafin(placeholder="Introduce el importe minimo")
 										.col-xs-12
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
-											.input-group
-												.input-group-addon
-													i.fa.fa-gears(aria-hidden="true")
-												select.form-control
-													option Selecciona una
-													option Activa
-													option Desactivada
-													option En pausa
+											select.form-control
+												option Selecciona una
+												option Activa
+												option Desactivada
+												option En pausa
 											.space
 											button.btn.btn-primary 
 												i.fa.fa-trash-o.ev.fa-floppy-o  
