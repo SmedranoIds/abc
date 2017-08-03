@@ -46,3 +46,9 @@ h1{
 .nav-tabs>li>a {
     border: 1px solid #ddd;
 }
+.panel-default{
+  &:hover {
+    border-color: #009ee5;
+	}
+	cursor: pointer;
+}
