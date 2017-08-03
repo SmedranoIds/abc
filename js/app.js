@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 	$('[data-toggle="tooltip"]').tooltip();
 
-	$(".fa").hover(function(){
+	$(".fa-certificate , .fa-cog").hover(function(){
 		$(this).addClass("fa-spin");
 	})
-	$(".fa").mouseleave(function(){
+	$(".fa-certificate , .fa-cog").mouseleave(function(){
 		$(this).removeClass("fa-spin");
 	})
 
