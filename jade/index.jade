@@ -15,7 +15,7 @@ html
 		.space
 		.container.barra
 			.usuario.listado
-				.row
+				.row 
 					.col-md-offset-1.col-md-10
 						h1 Inicia sesión en abc
 						br
@@ -267,21 +267,16 @@ html
 											br
 										.col-xs-12
 											.col-xs-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Importe maximo
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese un tipo de plan") Plan al que aplica 
 												.input-group
 													.input-group-addon
-														i.fa.fa-credit-card(aria-hidden="true")
-													input.form-control.fechainicio(placeholder="Introduce el importe maximo")
+														i.fa.fa-list(aria-hidden="true")
+													select.form-control
+														option Selecciona un Plan
+														option Anual
+														option Semestral
+														option Mensual
 											.col-xs-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Importe minimo
-												.input-group
-													.input-group-addon
-														i.fa.fa-credit-card(aria-hidden="true")
-													input.form-control.fechafin(placeholder="Introduce el importe minimo")
-										.col-xs-12
-											br
-										.col-xs-12
-											.col-xs-12
 												label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
 												.input-group
 													.input-group-addon
