@@ -57,6 +57,45 @@ html
 							.row
 								.space
 								.col-md-offset-1.col-md-10.text-center
+									h1 Busqueda
+									br
+									.col-xs-12.col-md-4
+										label(data-toggle="tooltip" data-placement="top" title="Ingrese su codigo de cupón") Codigo de cupón
+										.input-group
+											.input-group-addon
+												i.fa.fa-certificate(aria-hidden="true")
+											input.form-control(placeholder="Introduce un codigo de cupón")
+									.col-xs-12.col-md-4
+										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Nombre de cupón
+										.input-group
+											.input-group-addon
+												i.fa.fa-calendar(aria-hidden="true")
+											input.form-control(placeholder="Nombre de cupón")
+									.col-xs-12.col-md-4
+										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Porcentaje
+										.input-group
+											input.form-control(placeholder="Introduce la fecha de termino")
+											.input-group-addon %
+									.col-xs-12
+										br
+										label V i g e n c i a
+									.col-xs-12.col-md-6
+										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
+										.input-group
+											.input-group-addon
+												i.fa.fa-calendar(aria-hidden="true")
+											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+									.col-xs-12.col-md-6
+										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
+										.input-group
+											.input-group-addon
+												i.fa.fa-calendar(aria-hidden="true")
+											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+
+
+							.row
+								.space
+								.col-md-offset-1.col-md-10.text-center
 									h1 Listado de Promociones
 									br
 								.col-md-12
@@ -272,6 +311,16 @@ html
 													i.fa.fa-trash-o.ev.fa-floppy-o  
 													|  Crear
 												.space
+		br
+		.space
+		.container
+			.usuario.listado
+				.row 
+					.col-md-offset-1.col-md-10
+						h1 Historial
+						br
+		.space
+		br
 
 		// Modal
 		#myModalEliminar.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
