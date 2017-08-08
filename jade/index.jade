@@ -10,7 +10,7 @@ html
 		link(rel='stylesheet', href='../css/custom.css')
 		link(rel="stylesheet", href="../font-awesome/css/font-awesome.min.css")
 
-	body
+	body.barra
 		br
 		.space
 		.container.barra
@@ -47,9 +47,9 @@ html
 				div
 					// Nav tabs
 					ul.nav.nav-tabs(role='tablist')
-						li.active(role='presentation')
+						li.active.listado(role='presentation')
 							a(href='#lista', aria-controls='lista', role='tab', data-toggle='tab') Cupones existentes
-						li(role='presentation')
+						li.listado(role='presentation')
 							a(href='#nuevacampana', aria-controls='nuevacampana', role='tab', data-toggle='tab') Nuevo
 					// Tab panes
 					.tab-content
@@ -313,7 +313,7 @@ html
 												.space
 		br
 		.space
-		.container
+		.container.barra
 			.usuario.listado
 				.row 
 					.col-md-offset-1.col-md-10
