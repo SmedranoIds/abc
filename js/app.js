@@ -8,4 +8,5 @@ $( document ).ready(function() {
 		$(this).removeClass("fa-spin");
 	})
 
+
 });
