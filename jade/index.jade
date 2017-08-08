@@ -193,61 +193,31 @@ html
 									br
 									form#nuevacampana
 										.col-xs-12
-											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa No. Sucursal")
-													span.text-left No. Sucursal
-												.input-group
-													.input-group-addon
-														i.fa.fa-building(aria-hidden="true")
-													input.form-control.codigo(placeholder="Introdusca No.sucursal")
-											.col-xs-12.col-md-6
+											.col-xs-12.col-md-12
 												label(data-toggle="tooltip" data-placement="top" title="Ingresa un codigo")
 													span.text-left Codigo Cupón
 												.input-group
 													.input-group-addon
 														i.fa.fa-certificate(aria-hidden="true")
 													input.form-control.codigo(placeholder="Introduce el codigo de cupón")
-										.col-xs-12
-											br
-										.col-xs-12
-											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa una Clave")
-													span.text-left Clave de Puesto
+											.col-xs-12
+												br
+											.col-xs-12.col-md-12
+												label(data-toggle="tooltip" data-placement="top" title="Ingresa un nombre para el cupón")
+													span.text-left Nombre cupón
 												.input-group
 													.input-group-addon
 														i.fa.fa-certificate(aria-hidden="true")
-													input.form-control.codigo(placeholder="Introduce la clave de Puesto")
-											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa tu nombre")
-													span.text-left Nombre del ejecutivo
-												.input-group
-													.input-group-addon
-														i.fa.fa-certificate(aria-hidden="true")
-													input.form-control.codigo(placeholder="Ingresa tu nombre")
-										.col-xs-12
-											br
-										.col-xs-12
-											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa MB")
-													span.text-left MB del ejecutivo
-												.input-group
-													.input-group-addon
-														i.fa.fa-certificate(aria-hidden="true")
-													input.form-control.codigo(placeholder="Ingresa tu MB")
-											.col-xs-12.col-md-6.form-group
+													input.form-control.codigo(placeholder="Introduce el nombre para el cupón")
+											.col-xs-12
+												br
+											.col-xs-12.col-md-12.form-group
 												label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
 												.input-group
 													.input-group-addon
 														i.fa.fa-tag
 													input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
 													.input-group-addon %
-										.col-xs-12
-											.col-xs-12
-												label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Descripción
-												.input-group
-													.input-group-addon
-														i.fa.fa-commenting-o(aria-hidden="true")
-													input.form-control.descripcion(placeholder="Introduce una descripcion de la campaña")
 										.col-xs-12
 											br
 										.col-xs-12
@@ -266,30 +236,41 @@ html
 										.col-xs-12
 											br
 										.col-xs-12
-											.col-xs-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese un tipo de plan") Plan al que aplica 
+											.col-xs-12.col-md-4
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese un tipo de plan") Producto 
 												.input-group
 													.input-group-addon
 														i.fa.fa-list(aria-hidden="true")
 													select.form-control
-														option Selecciona un Plan
-														option Anual
-														option Semestral
-														option Mensual
-											.col-xs-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese estatus") Estatus
+														option Selecciona un Producto
+														option Fronterizos y legalizados
+														option Fronterizos y legalizados
+														option Fronterizos y legalizados
+											.col-xs-12.col-md-4
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese un plan") Plan
 												.input-group
 													.input-group-addon
 														i.fa.fa-gears(aria-hidden="true")
-													select.form-control
-														option Selecciona una
-														option Activa
-														option Desactivada
-														option En pausa
+													input.form-control.fechafin(placeholder="Introduce el plan del cupón")
+											.col-xs-12.col-md-4
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Ramo
+												.input-group
+													.input-group-addon
+														i.fa.fa-gears(aria-hidden="true")
+													input.form-control.fechafin(placeholder="Introduce el ramo del cupón")
+											.col-xs-12
+												br
+										.col-xs-12
+											.col-xs-12
+												label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Observaciones
+												.input-group
+													.input-group-addon
+														i.fa.fa-commenting-o(aria-hidden="true")
+													textarea.form-control.descripcion(placeholder="Introduce una observaciones")
 												.space
 												button.btn.btn-primary 
 													i.fa.fa-trash-o.ev.fa-floppy-o  
-													|  Guardar
+													|  Crear
 												.space
 
 		// Modal
