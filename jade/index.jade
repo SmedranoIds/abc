@@ -309,7 +309,7 @@ html
 													textarea.form-control.descripcion(placeholder="Introduce observaciones")
 												.space
 												button.btn.btn-primary 
-													i.fa.fa-trash-o.ev.fa-floppy-o  
+													i.fa.fa-trash-o.ev.fa-floppy-o
 													|  Crear
 												.space
 		br
@@ -444,6 +444,19 @@ html
 						button.btn.btn-default(type='button', data-dismiss='modal') Close
 						button.btn.btn-primary(type='button', data-dismiss='modal') Save changes
 
+		// Modal
+		#myModalError.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+						h4.modal-title Error
+					.modal-body
+						h4 idCupon
+						p descripcion del error, descripcion del error
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Cerrar
 		
 	script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
 	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
