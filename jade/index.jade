@@ -59,39 +59,40 @@ html
 								.space
 								.col-md-offset-1.col-md-10.text-center
 									h1 Busqueda
-									br
-									.col-xs-12.col-md-4
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese su codigo de cupón") Codigo de cupón
-										.input-group
-											.input-group-addon
-												i.fa.fa-certificate(aria-hidden="true")
-											input.form-control(placeholder="Introduce un codigo de cupón")
-									.col-xs-12.col-md-4
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Nombre de cupón
-										.input-group
-											.input-group-addon
-												i.fa.fa-calendar(aria-hidden="true")
-											input.form-control(placeholder="Nombre de cupón")
-									.col-xs-12.col-md-4
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Porcentaje
-										.input-group
-											input.form-control(placeholder="Introduce la fecha de termino")
-											.input-group-addon %
-									.col-xs-12
+									form#busqueda
 										br
-										label V i g e n c i a
-									.col-xs-12.col-md-6
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
-										.input-group
-											.input-group-addon
-												i.fa.fa-calendar(aria-hidden="true")
-											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
-									.col-xs-12.col-md-6
-										label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
-										.input-group
-											.input-group-addon
-												i.fa.fa-calendar(aria-hidden="true")
-											input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+										.col-xs-12.col-md-4
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese código de cupón a buscar") Código de cupón
+											.input-group
+												.input-group-addon
+													i.fa.fa-certificate(aria-hidden="true")
+												input.form-control(placeholder="Introduce un código de cupón")
+										.col-xs-12.col-md-4
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese el nombre del cupón a buscar") Nombre de cupón
+											.input-group
+												.input-group-addon
+													i.fa.fa-calendar(aria-hidden="true")
+												input.form-control(placeholder="Nombre de cupón")
+										.col-xs-12.col-md-4
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese el % de descuento") Descuento
+											.input-group
+												input.form-control(placeholder="Introduce el porcentaje")
+												.input-group-addon %
+										.col-xs-12
+											br
+											label V i g e n c i a
+										.col-xs-12.col-md-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese la fecha de inicio del cupón a buscar") Fecha de inicio
+											.input-group
+												.input-group-addon
+													i.fa.fa-calendar(aria-hidden="true")
+												input.form-control.fechafin(type="date")
+										.col-xs-12.col-md-6
+											label(data-toggle="tooltip" data-placement="top" title="Ingrese la fecha de termino del cupón a buscar") Fecha de termino
+											.input-group
+												.input-group-addon
+													i.fa.fa-calendar(aria-hidden="true")
+												input.form-control.fechafin(type="date")
 
 
 							.row
@@ -233,51 +234,62 @@ html
 									br
 									form#nuevacampana
 										.col-xs-12
+											.col-xs-offset-3.col-xs-9.col-md-offset-8.col-md-4
+												label(data-toggle="tooltip" data-placement="top" title="Selecciona archivo para crear multiples cupones") Alta de multiples cupones.
+												input.archivo(type='file',id="file",accept=".txt")
+										.col-xs-12
 											.col-xs-12.col-md-12
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa un codigo")
-													span.text-left Codigo Cupón
+												label(data-toggle="tooltip" data-placement="top" title="Ingresa código para el nuevo cupón")
+													span.text-left Código Cupón
 												.input-group
 													.input-group-addon
 														i.fa.fa-certificate(aria-hidden="true")
-													input.form-control.codigo(placeholder="Introduce el codigo de cupón")
+													input.form-control.codigo(placeholder="Introduce el código de cupón")
 											.col-xs-12
 												br
 											.col-xs-12.col-md-12
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa un nombre para el cupón")
+												label(data-toggle="tooltip" data-placement="top" title="Ingresa un nombre para el nuevo cupón")
 													span.text-left Nombre cupón
 												.input-group
 													.input-group-addon
 														i.fa.fa-certificate(aria-hidden="true")
-													input.form-control.codigo(placeholder="Introduce el nombre para el cupón")
+													input.form-control.nombre(placeholder="Nombre para cupón")
 											.col-xs-12
 												br
-											.col-xs-12.col-md-12.form-group
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una cantidad") Descuento
+										.col-xs-12
+											.col-xs-12.col-md-6
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese una cifra para el % de descuento") Descuento
 												.input-group
 													.input-group-addon
 														i.fa.fa-scissors
-													input.form-control.descuento(type='text', placeholder='Introduce el descuento de la campaña')
+													input.form-control.descuento(type='text', placeholder='Introduce el descuento de la cupón')
 													.input-group-addon %
+											.col-xs-12.col-md-6
+												label(data-toggle="tooltip" data-placement="top" title="Ingresa tu MB") MB del Ejecutivo.
+												.input-group
+													.input-group-addon
+														i.fa.fa-user-o(aria-hidden="true")
+													input.form-control.mbEjecutivo(type="text", placeholder="Introduce MB")
 										.col-xs-12
 											br
 										.col-xs-12
 											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de inicio
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha inicial para la vigencia del cupón") Fecha de inicio
 												.input-group
 													.input-group-addon
 														i.fa.fa-calendar(aria-hidden="true")
-													input.form-control.fechainicio(type="date", placeholder="Introduce la fecha de inicio")
+													input.form-control.fechainicio(type="date")
 											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Fecha de termino
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha de termino de la vigencia del cupón") Fecha de termino
 												.input-group
 													.input-group-addon
 														i.fa.fa-calendar(aria-hidden="true")
-													input.form-control.fechafin(type="date", placeholder="Introduce la fecha de termino")
+													input.form-control.fechafin(type="date")
 										.col-xs-12
 											br
 										.col-xs-12
 											.col-xs-12.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese un tipo de plan") Producto 
+												label(data-toggle="tooltip" data-placement="top" title="Selecciona el producto para la validez del cupón") Producto 
 												.input-group
 													.input-group-addon
 														i.fa.fa-rocket(aria-hidden="true")
@@ -287,22 +299,26 @@ html
 														option Fronterizos y legalizados
 														option Fronterizos y legalizados
 											.col-xs-12.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese un plan") Plan
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese el plan al que aplica") Plan
 												.input-group
 													.input-group-addon
 														i.fa.fa-calendar-check-o(aria-hidden="true")
 													input.form-control.fechafin(placeholder="Introduce el plan del cupón")
 											.col-xs-12.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha") Ramo
+												label(data-toggle="tooltip" data-placement="top" title="Ingrese tipo descuento?") Ramo
 												.input-group
 													.input-group-addon
 														i.fa.fa-industry(aria-hidden="true")
-													input.form-control.fechafin(placeholder="Introduce el ramo del cupón")
+													select.form-control
+														option Selecciona.....
+														option Ramo del descuento.
+														option Ramo del descuento.
+														option Ramo del descuento.
 											.col-xs-12
 												br
 										.col-xs-12
 											.col-xs-12
-												label(data-toggle="tooltip" data-placement="top" title="Descripción breve de campaña") Observaciones
+												label(data-toggle="tooltip" data-placement="top" title="Descripción del descuento") Observaciones
 												.input-group
 													.input-group-addon
 														i.fa.fa-comments(aria-hidden="true")
