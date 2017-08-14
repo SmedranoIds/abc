@@ -12,37 +12,9 @@ html
 
 	body
 		.row.barra
+		
 		br
 		.space
-		.container
-			.usuario.listado
-				.row 
-					.col-md-offset-1.col-md-10
-						h1 Inicia sesión en abc
-						br
-						form#Usuario
-							.col-md-offset-3.col-md-6.col-xs-12
-								label(data-toggle="tooltip" data-placement="top" title="Ingresa tu usuario") Usuario
-								.input-group
-									.input-group-addon
-										i.fa.fa-user-o(aria-hidden="true")
-									input.form-control.codigo(placeholder="Introduce tu Usuario")
-							.col-md-offset-3.col-md-6.col-xs-12
-								label(data-toggle="tooltip" data-placement="top" title="Contraseña") Contraseña
-								.input-group
-									.input-group-addon
-										i.fa.fa-key(aria-hidden="true")
-									input.form-control.codigo(placeholder="Introduce tu contraseña", type="password")
-								br
-					.col-xs-offset-1.col-xs-10.text-center
-						br
-						button.btn.btn-primary 
-							i.fa.fa-sign-in  
-							|  Entrar
-						.space
-
-		.space
-		br
 		.container
 			.row
 				div
@@ -59,8 +31,8 @@ html
 								.space
 								.col-md-offset-1.col-md-10.text-center
 									h1 Busqueda
+									br
 									form#busqueda
-										br
 										.col-xs-12.col-md-4
 											label(data-toggle="tooltip" data-placement="top" title="Ingrese código de cupón a buscar") Código de cupón
 											.input-group
@@ -100,45 +72,70 @@ html
 								.col-md-offset-1.col-md-10.text-center
 									h1 Listado de Promociones
 									br
+								.col-md-offset-1.col-md-10.text-center
+									.row
+										.col-md-2
+											span
+												label Marcar varios
+										.col-md-1.acomodo
+											input(type="checkbox",id="checkbox-a" class="regular-checkbox big-checkbox")
+											label(for="checkbox-a")
+										.col-md-1.col-xs-6.text-center.vista.acomodo
+											i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
+										.col-md-1.col-xs-6.text-center.vista.acomodo(data-toggle="tooltip" data-placement="top" title="Eliminar")
+											i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
+									br
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
 										.panel.panel-default
 											.panel-heading
 												.row
-													.col-md-6.col-xs-12.text-center
+													.col-md-1
+														input.check(type="checkbox",id="checkbox-a1" class="regular-checkbox big-checkbox")
+														label(for="checkbox-a1")
+													.col-md-5.col-xs-12.text-center
 														h3.panel-title Titulo Cupón
-													.col-md-4.col-xs-12.text-center
+													.col-md-3.col-xs-12.text-center
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center
 														i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
 													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
+													.col-md-1.col-xs-12.text-center
+														a(href="#")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
 															
 											.panel-body
-												.col-md-6.col-xs-12.text-center
-													| Descripción
-												.col-md-4.col-xs-12.text-center
-													| Fecha termino: 
-													strong  12/12/2017
-												.col-md-2.col-xs-12.text-center
-													| Descuento: 
-													strong  30%
+													.col-md-6.col-xs-12.text-center
+														| Descripción
+													.col-md-4.col-xs-12.text-center
+														| Fecha termino: 
+														strong  12/12/2017
+													.col-md-2.col-xs-12.text-center
+														| Descuento: 
+														strong  30%
 
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
 										.panel.panel-default
 											.panel-heading
 												.row
-													.col-md-6.col-xs-12.text-center
+													.col-md-1
+														input.check(type="checkbox",id="checkbox-a2" class="regular-checkbox big-checkbox")
+														label(for="checkbox-a2")
+													.col-md-5.col-xs-12.text-center
 														h3.panel-title Titulo Cupón
-													.col-md-4.col-xs-12.text-center
+													.col-md-3.col-xs-12.text-center
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center
 														i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
 													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
+													.col-md-1.col-xs-12.text-center
+														a(href="#")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
 											.panel-body
 												.col-md-6.col-xs-12.text-center
 													| Descripción
@@ -154,15 +151,21 @@ html
 										.panel.panel-default
 											.panel-heading
 												.row
-													.col-md-6.col-xs-12.text-center
+													.col-md-1
+														input.check(type="checkbox",id="checkbox-a3" class="regular-checkbox big-checkbox")
+														label(for="checkbox-a3")
+													.col-md-5.col-xs-12.text-center
 														h3.panel-title Titulo Cupón
-													.col-md-4.col-xs-12.text-center
+													.col-md-3.col-xs-12.text-center
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center
 														i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
 													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
+													.col-md-1.col-xs-12.text-center
+														a(href="#")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
 											.panel-body
 												.col-md-6.col-xs-12.text-center
 													| Descripción
@@ -177,15 +180,21 @@ html
 										.panel.panel-default
 											.panel-heading
 												.row
-													.col-md-6.col-xs-12.text-center
+													.col-md-1
+														input.check(type="checkbox",id="checkbox-a4" class="regular-checkbox big-checkbox")
+														label(for="checkbox-a4")
+													.col-md-5.col-xs-12.text-center
 														h3.panel-title Titulo Cupón
-													.col-md-4.col-xs-12.text-center
+													.col-md-3.col-xs-12.text-center
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center
 														i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
 													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
+													.col-md-1.col-xs-12.text-center
+														a(href="#")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
 											.panel-body
 												.col-md-6.col-xs-12.text-center
 													| Descripción
@@ -201,15 +210,21 @@ html
 										.panel.panel-default
 											.panel-heading
 												.row
-													.col-md-6.col-xs-12.text-center
+													.col-md-1
+														input.check(type="checkbox",id="checkbox-a5" class="regular-checkbox big-checkbox")
+														label(for="checkbox-a5")
+													.col-md-5.col-xs-12.text-center
 														h3.panel-title Titulo Cupón
-													.col-md-4.col-xs-12.text-center
+													.col-md-3.col-xs-12.text-center
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center
 														i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
 													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
+													.col-md-1.col-xs-12.text-center
+														a(href="#")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
 											.panel-body
 												.col-md-6.col-xs-12.text-center
 													| Descripción
@@ -318,16 +333,12 @@ html
 												br
 										.col-xs-12
 											.col-xs-12
-												label(data-toggle="tooltip" data-placement="top" title="Descripción del descuento") Observaciones
-												.input-group
-													.input-group-addon
-														i.fa.fa-comments(aria-hidden="true")
-													textarea.form-control.descripcion(placeholder="Introduce observaciones")
 												.space
 												button.btn.btn-primary 
 													i.fa.fa-trash-o.ev.fa-floppy-o
 													|  Crear
 												.space
+	//
 		br
 		.space
 		.container
@@ -442,8 +453,8 @@ html
 														li.list-group-item
 															span.badge Eliminacón
 															| Tipo Edición
-
-		.space
+	
+	.space
 		br
 
 		// Modal

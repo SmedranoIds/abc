@@ -7,6 +7,18 @@ $( document ).ready(function() {
 	$(".fa-certificate , .fa-cog").mouseleave(function(){
 		$(this).removeClass("fa-spin");
 	})
-
+	$("#checkbox-a").click(function(){
+		seleccion();
+	})
 
 });
+
+function seleccion(){
+	if( $('#checkbox-a').prop('checked') ){
+			$( ".check" ).prop( "checked", true );
+			$(".vista").fadeIn();
+		}else {
+			$( ".check" ).prop( "checked", false );
+			$(".vista").fadeOut();
+		}
+}
