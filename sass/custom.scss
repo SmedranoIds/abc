@@ -32,7 +32,13 @@ body{
 .ev{
 	cursor: pointer;
 }
-#myModalEliminar, #myModalDescripcion {
+.panel-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+#myModalEliminar, #myModalDescripcion, #myModalEliminaVarios, #myModalFechaVenci {
     border-radius: 7px;
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
