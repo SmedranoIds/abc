@@ -24,7 +24,7 @@ html
 							a(href='#lista', aria-controls='lista', role='tab', data-toggle='tab') Cupones existentes
 						li(role='presentation')
 							a(href='#nuevacampana', aria-controls='nuevacampana', role='tab', data-toggle='tab') Nuevo
-					// Tab panes
+					// Tab panels
 					.tab-content
 						#lista.tab-pane.active.listado(role='tabpanel')
 							.row
@@ -209,7 +209,7 @@ html
 												a(href='#') Previous
 											li
 												a(href='#') Next
-
+							// Ventana Agregar cupon
 						#nuevacampana.tab-pane.listado(role='tabpanel')
 							.row
 								.col-xs-offset-1.col-xs-10
@@ -306,8 +306,7 @@ html
 													i.fa.fa-trash-o.ev.fa-floppy-o
 													|  Crear
 												.space
-	.space
-		br
+			// Ventana Configurar editar
 		br
 		.space
 		.container
@@ -410,7 +409,7 @@ html
 		.space
 		br
 
-		// Modal
+		// Modal eliminar cupon
 		#myModalEliminar.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
 				.modal-content
@@ -424,7 +423,7 @@ html
 						button.btn.btn-default(type='button', data-dismiss='modal') Close
 						button.btn.btn-primary(type='button', data-dismiss='modal') Aceptar
 
-		// Modal
+		// Modal eliminar varios cupones
 		#myModalEliminaVarios.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
 				.modal-content
@@ -438,7 +437,7 @@ html
 						button.btn.btn-default(type='button', data-dismiss='modal') Close
 						button.btn.btn-primary(type='button', data-dismiss='modal') Aceptar
 
-		// Modal
+		// Modal editar fecha vencimiento
 		#myModalFechaVenci.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
 				.modal-content
@@ -465,7 +464,7 @@ html
 						button.btn.btn-default(type='button', data-dismiss='modal') Close
 						button.btn.btn-primary(type='button', data-dismiss='modal') Aceptar
 
-		// Modal
+		// Modal vista previa
 		#myModalDescripcion.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
 				.modal-content
@@ -509,7 +508,7 @@ html
 					.modal-footer
 						button.btn.btn-default(type='button', data-dismiss='modal') Close
 
-		// Modal
+		// Modal error
 		#myModalError.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 			.modal-dialog(role='document')
 				.modal-content
