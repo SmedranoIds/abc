@@ -5,8 +5,8 @@ $azul4:#52BCEC;
 $azul5:#89D1F3;
 $azul6:#B5E5F9;
 $azul7:#e7f6fd;
-
 $verde:#86C82D;
+
 body{
 	background: #f2f2f2;
 	.listado{
@@ -44,7 +44,7 @@ body{
 	-webkit-border-radius: 7px;
     h4{
 		font-size: 18px;
-		color: #094FA4;
+		color: $azul1;
     }
 }
 .tab-content{
@@ -69,7 +69,7 @@ h1{
 }
 .panel-default{
   &:hover {
-    border-color: #009ee5;
+    border-color: $azul3;
 	}
 	cursor: pointer;
 }

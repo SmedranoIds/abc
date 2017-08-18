@@ -34,19 +34,19 @@ html
 									br
 									form#busqueda
 										.col-xs-12.col-md-4
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese código de cupón a buscar") Código de cupón
+											label(data-toggle="tooltip", data-placement="top", title="Ingrese código de cupón a buscar") Código de cupón
 											.input-group
 												.input-group-addon
 													i.fa.fa-certificate(aria-hidden="true")
 												input.form-control(placeholder="Introduce un código de cupón")
 										.col-xs-12.col-md-4
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese el nombre del cupón a buscar") Nombre de cupón
+											label(data-toggle="tooltip", data-placement="top", title="Ingrese el nombre del cupón a buscar") Nombre de cupón
 											.input-group
 												.input-group-addon
 													i.fa.fa-calendar(aria-hidden="true")
 												input.form-control(placeholder="Nombre de cupón")
 										.col-xs-12.col-md-4
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese el % de descuento") Descuento
+											label(data-toggle="tooltip",data-placement="top",title="Ingrese el % de descuento") Descuento
 											.input-group
 												input.form-control(placeholder="Introduce el porcentaje")
 												.input-group-addon %
@@ -54,13 +54,13 @@ html
 											br
 											label V i g e n c i a
 										.col-xs-12.col-md-6
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese la fecha de inicio del cupón a buscar") Fecha de inicio
+											label(data-toggle="tooltip",data-placement="top",title="Ingrese la fecha de inicio del cupón a buscar") Fecha de inicio
 											.input-group
 												.input-group-addon
 													i.fa.fa-calendar(aria-hidden="true")
 												input.form-control.fechafin(type="date")
 										.col-xs-12.col-md-6
-											label(data-toggle="tooltip" data-placement="top" title="Ingrese la fecha de termino del cupón a buscar") Fecha de termino
+											label(data-toggle="tooltip",data-placement="top",title="Ingrese la fecha de termino del cupón a buscar") Fecha de termino
 											.input-group
 												.input-group-addon
 													i.fa.fa-calendar(aria-hidden="true")
@@ -80,12 +80,12 @@ html
 											input(type="checkbox",id="checkbox-a" class="regular-checkbox big-checkbox")
 											label(for="checkbox-a")
 										.col-md-1.col-xs-6.text-center.vista.acomodo(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalFechaVenci', data-trigger='hover')
-											i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar fecha vencimiento")
-										.col-md-1.col-xs-6.text-center.vista.acomodo(data-toggle="tooltip" data-placement="top" title="Eliminar")
+											i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Configurar fecha vencimiento")
+										.col-md-1.col-xs-6.text-center.vista.acomodo(data-toggle="tooltip",data-placement="top",title="Eliminar")
 											i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminaVarios', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
 										.col-md-1.col-xs-12.text-center.vista.acomodo
 											a(href="#")
-												i.fa.fa-cloud-download.fa-2x.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo de los cupones seleccionados")
+												i.fa.fa-cloud-download.fa-2x.descarga(data-toggle="tooltip",data-placement="top",title="Descarga el archivo de los cupones seleccionados")
 									br
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
@@ -101,15 +101,15 @@ html
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalDescripcion', data-trigger='hover')
-														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Descripción")
+														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Descripción")
 													.col-md-1.col-xs-6.text-center
 														a(href="#")
-															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
-													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
+															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Configurar")
+													.col-md-1.col-xs-6.text-center(data-toggle="tooltip",data-placement="top",title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
 													.col-md-1.col-xs-6.text-center
 														a(href="#")
-															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip",data-placement="top",title="Descarga el archivo del cupón")
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
 										.panel.panel-default
@@ -124,15 +124,15 @@ html
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalDescripcion', data-trigger='hover')
-														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Descripción")
+														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Descripción")
 													.col-md-1.col-xs-6.text-center
 														a(href="#")
-															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
-													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
+															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Configurar")
+													.col-md-1.col-xs-6.text-center(data-toggle="tooltip",data-placement="top",title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
 													.col-md-1.col-xs-12.text-center
 														a(href="#")
-															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip",data-placement="top",title="Descarga el archivo del cupón")
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
 										.panel.panel-default
@@ -147,15 +147,15 @@ html
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalDescripcion', data-trigger='hover')
-														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Descripción")
+														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Descripción")
 													.col-md-1.col-xs-6.text-center
 														a(href="#")
-															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
-													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
+															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Configurar")
+													.col-md-1.col-xs-6.text-center(data-toggle="tooltip",data-placement="top",title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
 													.col-md-1.col-xs-12.text-center
 														a(href="#")
-															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip",data-placement="top",title="Descarga el archivo del cupón")
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
 										.panel.panel-default
@@ -170,15 +170,15 @@ html
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalDescripcion', data-trigger='hover')
-														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Descripción")
+														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Descripción")
 													.col-md-1.col-xs-6.text-center
 														a(href="#")
-															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
-													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
+															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Configurar")
+													.col-md-1.col-xs-6.text-center(data-toggle="tooltip",data-placement="top",title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
 													.col-md-1.col-xs-12.text-center
 														a(href="#")
-															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip",data-placement="top",title="Descarga el archivo del cupón")
 								.col-md-12
 									.col-md-offset-1.col-md-10.campania
 										.panel.panel-default
@@ -193,15 +193,15 @@ html
 														h3.panel-title Estatus:  
 															strong  Activo
 													.col-md-1.col-xs-6.text-center(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalDescripcion', data-trigger='hover')
-														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Descripción")
+														i.fa.fa-eye.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Descripción")
 													.col-md-1.col-xs-6.text-center
 														a(href="#")
-															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip" data-placement="top" title="Configurar")
-													.col-md-1.col-xs-6.text-center(data-toggle="tooltip" data-placement="top" title="Eliminar")
+															i.fa.fa-cog.fa-fw.fa-2x.ev.editar(data-toggle="tooltip",data-placement="top",title="Configurar")
+													.col-md-1.col-xs-6.text-center(data-toggle="tooltip",data-placement="top",title="Eliminar")
 														i(target='_BLANK',href='#', data-toggle='modal', data-target='#myModalEliminar', data-trigger='hover').fa.fa-trash-o.fa-2x.ev.delete
 													.col-md-1.col-xs-12.text-center
 														a(href="#")
-															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip" data-placement="top" title="Descarga el archivo del cupón")
+															i.fa.fa-cloud-download.fa-2x.ev.descarga(data-toggle="tooltip",data-placement="top",title="Descarga el archivo del cupón")
 								.col-md-offset-1.col-md-10
 									nav(aria-label='...')
 										ul.pager
@@ -218,11 +218,11 @@ html
 									form#nuevacampana
 										.col-xs-12
 											.col-xs-9.col-md-offset-7.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Selecciona archivo para crear multiples cupones") Alta de multiples cupones.
+												label(data-toggle="tooltip",data-placement="top",title="Selecciona archivo para crear multiples cupones") Alta de multiples cupones.
 												input.archivo.bnt.btn-default(type='file',id="file",accept=".txt")
 										.col-xs-12
 											.col-xs-12.col-md-12
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa código para el nuevo cupón")
+												label(data-toggle="tooltip",data-placement="top",title="Ingresa código para el nuevo cupón")
 													span.text-left Código Cupón
 												.input-group
 													.input-group-addon
@@ -231,7 +231,7 @@ html
 											.col-xs-12
 												br
 											.col-xs-12.col-md-12
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa un nombre para el nuevo cupón")
+												label(data-toggle="tooltip",data-placement="top",title="Ingresa un nombre para el nuevo cupón")
 													span.text-left Nombre cupón
 												.input-group
 													.input-group-addon
@@ -241,14 +241,14 @@ html
 												br
 										.col-xs-12
 											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una cifra para el % de descuento") Descuento
+												label(data-toggle="tooltip",data-placement="top",title="Ingrese una cifra para el % de descuento") Descuento
 												.input-group
 													.input-group-addon
 														i.fa.fa-scissors
 													input.form-control.descuento(type='text', placeholder='Introduce el descuento de la cupón')
 													.input-group-addon %
 											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingresa tu MB") MB del Ejecutivo.
+												label(data-toggle="tooltip",data-placement="top",title="Ingresa tu MB") MB del Ejecutivo.
 												.input-group
 													.input-group-addon
 														i.fa.fa-user-o(aria-hidden="true")
@@ -257,13 +257,13 @@ html
 											br
 										.col-xs-12
 											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha inicial para la vigencia del cupón") Fecha de inicio
+												label(data-toggle="tooltip",data-placement="top",title="Ingrese una fecha inicial para la vigencia del cupón") Fecha de inicio
 												.input-group
 													.input-group-addon
 														i.fa.fa-calendar(aria-hidden="true")
 													input.form-control.fechainicio(type="date")
 											.col-xs-12.col-md-6
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha de termino de la vigencia del cupón") Fecha de termino
+												label(data-toggle="tooltip",data-placement="top",title="Ingrese una fecha de termino de la vigencia del cupón") Fecha de termino
 												.input-group
 													.input-group-addon
 														i.fa.fa-calendar(aria-hidden="true")
@@ -272,7 +272,7 @@ html
 											br
 										.col-xs-12
 											.col-xs-12.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese tipo descuento?") Ramo
+												label(data-toggle="tooltip",data-placement="top",title="Ingrese tipo descuento?") Ramo
 												.input-group
 													.input-group-addon
 														i.fa.fa-industry(aria-hidden="true")
@@ -282,7 +282,7 @@ html
 														option Ramo del descuento.
 														option Ramo del descuento.
 											.col-xs-12.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Selecciona el producto para la validez del cupón") Producto 
+												label(data-toggle="tooltip",data-placement="top",title="Selecciona el producto para la validez del cupón") Producto 
 												.input-group
 													.input-group-addon
 														i.fa.fa-rocket(aria-hidden="true")
@@ -292,7 +292,7 @@ html
 														option Fronterizos y legalizados
 														option Fronterizos y legalizados
 											.col-xs-12.col-md-4
-												label(data-toggle="tooltip" data-placement="top" title="Ingrese el plan al que aplica") Plan
+												label(data-toggle="tooltip",data-placement="top",title="Ingrese el plan al que aplica") Plan
 												.input-group
 													.input-group-addon
 														i.fa.fa-calendar-check-o(aria-hidden="true")
@@ -322,7 +322,7 @@ html
 						form#configcup
 							.col-xs-12
 								.col-xs-12.col-md-12
-									label(data-toggle="tooltip" data-placement="top" title="Ingresa código para el nuevo cupón")
+									label(data-toggle="tooltip",data-placement="top",title="Ingresa código para el nuevo cupón")
 										span.text-left Código Cupón
 									.input-group
 										.input-group-addon
@@ -331,7 +331,7 @@ html
 								.col-xs-12
 									br
 								.col-xs-12.col-md-12
-									label(data-toggle="tooltip" data-placement="top" title="Ingresa un nombre para el nuevo cupón")
+									label(data-toggle="tooltip",data-placement="top",title="Ingresa un nombre para el nuevo cupón")
 										span.text-left Nombre cupón
 									.input-group
 										.input-group-addon
@@ -341,14 +341,14 @@ html
 									br
 							.col-xs-12
 								.col-xs-12.col-md-6
-									label(data-toggle="tooltip" data-placement="top" title="Ingrese una cifra para el % de descuento") Descuento
+									label(data-toggle="tooltip",data-placement="top",title="Ingrese una cifra para el % de descuento") Descuento
 									.input-group
 										.input-group-addon
 											i.fa.fa-scissors
 										input.form-control.descuento(type='text', placeholder='Introduce el descuento de la cupón')
 										.input-group-addon %
 								.col-xs-12.col-md-6
-									label(data-toggle="tooltip" data-placement="top" title="Ingresa tu MB") MB del Ejecutivo.
+									label(data-toggle="tooltip",data-placement="top",title="Ingresa tu MB") MB del Ejecutivo.
 									.input-group
 										.input-group-addon
 											i.fa.fa-user-o(aria-hidden="true")
@@ -357,13 +357,13 @@ html
 								br
 							.col-xs-12
 								.col-xs-12.col-md-6
-									label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha inicial para la vigencia del cupón") Fecha de inicio
+									label(data-toggle="tooltip",data-placement="top",title="Ingrese una fecha inicial para la vigencia del cupón") Fecha de inicio
 									.input-group
 										.input-group-addon
 											i.fa.fa-calendar(aria-hidden="true")
 										input.form-control.fechainicio(type="date")
 								.col-xs-12.col-md-6
-									label(data-toggle="tooltip" data-placement="top" title="Ingrese una fecha de termino de la vigencia del cupón") Fecha de termino
+									label(data-toggle="tooltip",data-placement="top",title="Ingrese una fecha de termino de la vigencia del cupón") Fecha de termino
 									.input-group
 										.input-group-addon
 											i.fa.fa-calendar(aria-hidden="true")
@@ -372,7 +372,7 @@ html
 								br
 							.col-xs-12
 								.col-xs-12.col-md-4
-									label(data-toggle="tooltip" data-placement="top" title="Ingrese tipo descuento?") Ramo
+									label(data-toggle="tooltip",data-placement="top",title="Ingrese tipo descuento?") Ramo
 									.input-group
 										.input-group-addon
 											i.fa.fa-industry(aria-hidden="true")
@@ -382,7 +382,7 @@ html
 											option Ramo del descuento.
 											option Ramo del descuento.
 								.col-xs-12.col-md-4
-									label(data-toggle="tooltip" data-placement="top" title="Selecciona el producto para la validez del cupón") Producto 
+									label(data-toggle="tooltip",data-placement="top",title="Selecciona el producto para la validez del cupón") Producto 
 									.input-group
 										.input-group-addon
 											i.fa.fa-rocket(aria-hidden="true")
@@ -392,7 +392,7 @@ html
 											option Fronterizos y legalizados
 											option Fronterizos y legalizados
 								.col-xs-12.col-md-4
-									label(data-toggle="tooltip" data-placement="top" title="Ingrese el plan al que aplica") Plan
+									label(data-toggle="tooltip",data-placement="top",title="Ingrese el plan al que aplica") Plan
 									.input-group
 										.input-group-addon
 											i.fa.fa-calendar-check-o(aria-hidden="true")
@@ -448,13 +448,13 @@ html
 					.modal-body
 						.row
 							.col-xs-12.col-md-6
-								label(data-toggle="tooltip" data-placement="top" title="Ingrese la fecha de inicio del cupón a buscar") Fecha de inicio
+								label(data-toggle="tooltip",data-placement="top",title="Ingrese la fecha de inicio del cupón a buscar") Fecha de inicio
 								.input-group
 									.input-group-addon
 										i.fa.fa-calendar(aria-hidden="true")
 									input.form-control.fechafin(type="date")
 							.col-xs-12.col-md-6
-								label(data-toggle="tooltip" data-placement="top" title="Ingrese la fecha de termino del cupón a buscar") Fecha de termino
+								label(data-toggle="tooltip",data-placement="top",title="Ingrese la fecha de termino del cupón a buscar") Fecha de termino
 								.input-group
 									.input-group-addon
 										i.fa.fa-calendar(aria-hidden="true")
