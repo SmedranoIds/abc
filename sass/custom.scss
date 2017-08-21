@@ -7,6 +7,11 @@ $azul6:#B5E5F9;
 $azul7:#e7f6fd;
 $verde:#86C82D;
 
+$spriteAurl:url(../assets/img/sprite_azul.png);
+$spriteA2url:url(../assets/img/sprite_azul2.png);
+$spriteGurl:url(../assets/img/sprite_gris.png);
+$spriteG2url:url(../assets/img/sprite_gris2.png);
+
 body{
 	background: #f2f2f2;
 	.listado{
@@ -142,7 +147,6 @@ h1{
 }
 .acomodo{
 	top: -6px;
-	left: -40px;
 }
 .vista{display: none;}
 .panel-heading {
@@ -150,4 +154,69 @@ h1{
 }
 .panel {
     margin-bottom: 10px;
+}
+.sprite{
+	background: $spriteGurl;
+	height: 15px;
+    width: 15px;
+    top: 10px;
+    left: 5px;
+    display: inline-block;
+	&.sol{
+	    background-position: 98px -2px;
+	}
+	&.calendario{
+	    background-position: 118px -2px;
+	}
+	&.cupon{
+	    background-position: 77px -2px;
+	}
+	&.tijeras{
+	    background-position: 177px -2px;
+	}
+	&.user{
+	    background-position: 36px -2px;
+	}
+	&.industry{
+	    background-position: -3px 18px;
+	}
+	&.rocket{
+	    background-position: 137px -2px;
+	}
+}
+.spriteG2{
+	background: $spriteG2url;
+	height: 28px;
+    width: 29px;
+    top: 1px;
+    display: inline-block;
+	&.editar{
+        background-position: 75px 34px;
+		&:hover{
+			background: $spriteA2url;
+			background-position: -165px 34px;
+		}
+	}
+	&.delete{
+        background-position: 195px -46px;
+		&:hover{
+			background: $spriteA2url;
+			background-position: -45px 34px;
+		}
+	}
+	&.descarga{
+		background-position: 154px 34px;
+		&:hover{
+			background: $spriteA2url;
+			background-position: -86px 34px;
+		}
+	}
+	&.eye{
+		background-position: 115px 34px;
+		&:hover{
+			background: $spriteA2url;
+			background-position: 115px 34px;
+		}
+	}
+
 }
