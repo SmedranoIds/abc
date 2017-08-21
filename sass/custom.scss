@@ -7,11 +7,23 @@ $azul6:#B5E5F9;
 $azul7:#e7f6fd;
 $verde:#86C82D;
 
-$spriteAurl:url(../assets/img/sprite_azul.png);
 $spriteA2url:url(../assets/img/sprite_azul2.png);
 $spriteGurl:url(../assets/img/sprite_gris.png);
 $spriteG2url:url(../assets/img/sprite_gris2.png);
 
+
+* {
+  font-family: Stag, Arial, sans-serif; }
+  html {
+  font-family: arial;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+  body {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
 body{
 	background: #f2f2f2;
 	.listado{
@@ -23,7 +35,8 @@ body{
 	-moz-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
 	box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
 	h1 {
-		color:#000;
+		color:#094FA4;
+		font-size: 24px;
 	}
 	}
 	.usuario{
@@ -219,4 +232,20 @@ h1{
 		}
 	}
 
+}
+.btn {
+    border-radius: 0px;
+	&.btn.btn-primary, .btn.btn-primary {
+    color: #fff;
+    background-color: #094FA4;
+    border: 1px solid transparent;
+    font-weight: bold;
+		&:hover {
+		background-color: #006EC1;
+		}
+ 	}
+ 	
+}
+.btn-lg {
+    padding: 3px;
 }
