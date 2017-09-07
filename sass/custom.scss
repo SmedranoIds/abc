@@ -1,11 +1,12 @@
 $azul1:#094FA4;
 $azul2:#006EC1;
 $azul3:#009EE5;
-$azul4:#52BCEC;
+$azul4:#005FB6;
 $azul5:#89D1F3;
 $azul6:#B5E5F9;
 $azul7:#e7f6fd;
 $verde:#86C82D;
+
 
 $spriteA2url:url(../assets/img/sprite_azul2.png);
 $spriteGurl:url(../assets/img/sprite_gris.png);
@@ -110,7 +111,7 @@ h1{
 }
 .regular-checkbox + label {
     background-color: #fff;
-    border: 2px solid $azul3;
+    border: 2px solid $azul4;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
     padding: 9px;
     border-radius: 3px 3px 3px 3px;
@@ -127,7 +128,7 @@ h1{
 }
 .regular-checkbox:checked + label {
     background-color: #fff;
-    border: 2px solid $azul3;
+    border: 2px solid $azul4;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
     color: $azul3;
 }
@@ -146,7 +147,7 @@ h1{
 .big-checkbox:checked + label:after {
     font-size: 22px;
     left: 3px;
-    color: $azul3;
+    color: $azul4;
 }
 .tag {
     font-family: Arial, sans-serif;
@@ -241,11 +242,20 @@ h1{
     border: 1px solid transparent;
     font-weight: bold;
 		&:hover {
-		background-color: #006EC1;
+		background-color: $azul2;
 		}
  	}
  	
 }
 .btn-lg {
     padding: 3px;
+}
+.dato{
+    font-size: 12px;
+}
+.panel-title{
+	margin-top: 0;
+}
+.fecha{
+	margin-top: 10px;
 }
